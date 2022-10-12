@@ -1,6 +1,6 @@
 package day4;
 
-class ClassB{
+public class ClassA {
 	private int Id;
 	private String Name;
 	private int age;
@@ -23,7 +23,7 @@ class ClassB{
 	public int getId() {
 		return Id;
 	}
-	public ClassB(int id, String name, int age, int salary) {
+	public ClassA(int id, String name, int age, int salary) {
 		Id = id;
 		Name = name;
 		this.age = age;
@@ -32,17 +32,15 @@ class ClassB{
 	
 	@Override
 	public String toString() {
-		return "ClassB [Id=" + Id + ", Name=" + Name + ", age=" + age + ", salary=" + salary + "]";
+		return "ClassA [Id=" + Id + ", Name=" + Name + ", age=" + age + ", salary=" + salary + "]";
 	}
 	
-}
-public class ClassA {
 	public static void main(String[] args) {
 		System.out.println("In 2022 the Employees of the company were: ");
-		ClassB b1 = new ClassB(123,"Samarth",22,30000);
-		ClassB b2 = new ClassB(124,"Reda",16,100000);
-		ClassB b3 = new ClassB(125,"Meghana",85,3000);
-		ClassB b4 = new ClassB(126,"Nireeksha",99,1);
+		ClassA b1 = new ClassA(123,"Samarth",22,30000);
+		ClassA b2 = new ClassA(124,"Reda",16,100000);
+		ClassA b3 = new ClassA(125,"Meghana",85,3000);
+		ClassA b4 = new ClassA(126,"Nireeksha",99,1);
 		
 		System.out.println(b1);
 		System.out.println(b2);
