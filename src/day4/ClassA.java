@@ -1,6 +1,6 @@
 package day4;
 
-public class ClassA {
+public class ClassA implements Comparable<ClassA> {
 	private int Id;
 	private String Name;
 	private int age;
@@ -66,5 +66,12 @@ public class ClassA {
 		System.out.println(b4);
 		
 		
+	}
+	@Override
+	public int compareTo(ClassA o) {
+		if(this.age>o.age)
+			return 0;
+		else
+			return -1;
 	}
 }
