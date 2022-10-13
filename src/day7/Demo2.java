@@ -3,6 +3,7 @@ package day7;
 import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
+import java.util.Comparator;
 
 import day4.ClassA;
 public class Demo2 {
@@ -42,6 +43,10 @@ public class Demo2 {
 		
 		Collections.sort(employees,new CompareSalary());
 		System.out.println("Sort using Comparator on Salary:");
+		System.out.println(employees);
+		
+		Comparator<ClassA> compareSalary = (o1,o2) -> {if(o1.getSalary()>o2.getSalary()) return 0; else return -1;};
+		System.out.println("Sort using Lambda Function");
 		System.out.println(employees);
 	}
 
